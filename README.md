@@ -10,7 +10,6 @@ Este projeto provisiona um secret no AWS Secrets Manager utilizando Terraform. E
   - *variables.tf*: Define as variáveis utilizadas (como região, nome do secret e valor do secret).
   - *outputs.tf*: Exporta outputs relevantes (`secret_id` e `secret_arn`).
 - **secret.json.enc**: Arquivo contendo os dados sensíveis criptografados utilizando o SOPS e AWS KMS.
-- **secret.json** (não versionado): Arquivo original com o conteúdo em texto plano que foi criptografado para gerar o `secret.json.enc`.
 
 ## Como Funciona
 
